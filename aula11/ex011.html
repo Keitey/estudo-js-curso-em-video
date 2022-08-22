@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+<body>
+    <h1>Consulta de cidadania</h1>
+
+    Digite seu país de origem <input type="text" name="cid" id="cid">
+    <input type="button" value="verificar" onclick="consultar()">
+    <div id="res"></div>
+
+    <script>
+        let cidadania = document.getElementById("cid").value;
+        let res = document.getElementById("res");
+
+        function consultar() {
+            if(cidadania === 'Brasil'){
+                res.innerHTML = `Cidadão nascido no ${cidadania}, portanto, brasileiro(a)`
+            }
+            else{
+                res.innerHTML = `Cidadão estrangeiro(a)`
+            }
+        }
+    </script>
+</body>
+</html>
