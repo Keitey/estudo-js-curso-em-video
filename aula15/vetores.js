@@ -9,3 +9,5 @@ let num = [4, 5, 6, 7, 8];
 // }
 let pos = num.indexOf(6)
 console.log(`a posição do elemento é: ${pos}`)
+
+
